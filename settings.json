@@ -1,0 +1,7 @@
+{
+    "serverIp": "192.168.0.95",
+    "dbPort":   "1521",
+    "dbSid":    "swg",
+    "dbUser":   "swg",
+    "dbPass":   "swg"
+}
