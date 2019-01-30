@@ -1,11 +1,15 @@
 # web-data
 Repository for semi-useful PHP SQL queries you can use to extract useful information from the SWG Oracle database
+
 ## Requirements
-###All
+### All
+- Web Server (IIS, Apache, etc.)
 - PHP 7.0+
-###Windows Only
+
+### Windows Only
 - php_pdo_oci.dll (a PHP PDO Oracle library for Windows compatible with PHP 7.0+)
-####Notes:
+
+#### Notes:
 This installation was done on Windows.  If you are running your web server on some other platform (i.e. Linux distros) then you
 will likely need a different PHP PDO Oracle library than the Windows version.
 
