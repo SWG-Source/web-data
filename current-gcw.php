@@ -72,7 +72,7 @@ try{
 						WHEN po.max_gcw_imperial_rating < 45000 THEN 'Major'
 						WHEN po.max_gcw_imperial_rating < 50000 THEN 'Lt. Colonel'
 						WHEN po.max_gcw_imperial_rating < 55000 THEN 'Colonel'
-						WHEN po.max_gcw_imperial_rating >= THEN 'General'
+						WHEN po.max_gcw_imperial_rating >= 55000 THEN 'General'
 				END as highest_imperial_rank,
 				CASE
 						WHEN po.max_gcw_rebel_rating < 0 THEN 'Not Ranked'
