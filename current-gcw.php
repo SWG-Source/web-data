@@ -75,19 +75,19 @@ try{
 						WHEN po.max_gcw_imperial_rating >= THEN 'General'
 				END as highest_imperial_rank,
 				CASE
-						WHEN po.current_gcw_rating < 0 THEN 'Not Ranked'
-						WHEN po.current_gcw_rating < 5000 THEN 'Private'
-						WHEN po.current_gcw_rating < 10000 THEN 'Trooper'
-						WHEN po.current_gcw_rating < 15000 THEN 'High Trooper'
-						WHEN po.current_gcw_rating < 20000 THEN 'Sergeant'
-						WHEN po.current_gcw_rating < 25000 THEN 'Senior Sergeant'
-						WHEN po.current_gcw_rating < 30000 THEN 'Sergeant Major'
-						WHEN po.current_gcw_rating < 35000 THEN 'Lieutenant'
-						WHEN po.current_gcw_rating < 40000 THEN 'Captain'
-						WHEN po.current_gcw_rating < 45000 THEN 'Major'
-						WHEN po.current_gcw_rating < 50000 THEN 'Commander'
-						WHEN po.current_gcw_rating < 55000 THEN 'Colonel'
-						WHEN po.current_gcw_rating >= 55000 THEN 'General'
+						WHEN po.max_gcw_rebel_rating < 0 THEN 'Not Ranked'
+						WHEN po.max_gcw_rebel_rating < 5000 THEN 'Private'
+						WHEN po.max_gcw_rebel_rating < 10000 THEN 'Trooper'
+						WHEN po.max_gcw_rebel_rating < 15000 THEN 'High Trooper'
+						WHEN po.max_gcw_rebel_rating < 20000 THEN 'Sergeant'
+						WHEN po.max_gcw_rebel_rating < 25000 THEN 'Senior Sergeant'
+						WHEN po.max_gcw_rebel_rating < 30000 THEN 'Sergeant Major'
+						WHEN po.max_gcw_rebel_rating < 35000 THEN 'Lieutenant'
+						WHEN po.max_gcw_rebel_rating < 40000 THEN 'Captain'
+						WHEN po.max_gcw_rebel_rating < 45000 THEN 'Major'
+						WHEN po.max_gcw_rebel_rating < 50000 THEN 'Commander'
+						WHEN po.max_gcw_rebel_rating < 55000 THEN 'Colonel'
+						WHEN po.max_gcw_rebel_rating >= 55000 THEN 'General'
 				END as highest_rebel_rank
 		from
 				player_objects po
